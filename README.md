@@ -1,2 +1,2 @@
 # Exercicios-URI-ONLINE-JUDGE
-Exercícios resolvidos em Python.
+Exercícios do site https://www.urionlinejudge.com.br resolvidos por mim, em Python.
