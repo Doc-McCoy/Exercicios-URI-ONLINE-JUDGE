@@ -2,13 +2,17 @@
 # https://www.urionlinejudge.com.br/judge/pt/problems/view/1069
 # Por: Renan Santana Desiderio
 
-m = 0
-q = 0
-for i in range(10):
-	n = input()
-	q+=1
-	if n>m:
-		m=n
-		q=q
-print m
-print q
+test_cases = int(input())
+
+for i in range(test_cases):
+	content = input()
+	left_side = 0
+	# right_side = 0
+	diamonds = 0
+	for charactere in content:
+		if charactere == '<':
+			left_side += 1
+		elif charactere == '>' and left_side > 0:
+			diamonds += 1
+			left_side -= 1
+	print(diamonds)
